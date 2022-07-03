@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  
+app-config:
+  client:
+    viacep: https://viacep.com.br/ws/%s/json/
+  cache:
+    ttl: 60
+    scheduler: '0 * * * * *'
+    strategy: local
+    
