@@ -1,4 +1,4 @@
-#Projeto de API para consulta de CEP com Cache
+# Projeto de API para consulta de CEP com Cache
 O objetivo deste projeto é criar uma REST API para consulta de CEP utilizando cache local e distribuído e consumir a API do ViaCep ([https://viacep.com.br/](https://viacep.com.br/))
 
 ## Tecnologias Utilizadas
@@ -30,7 +30,7 @@ Para utilizar o cache em memória:
 mvn spring-boot:run -D spring-boot.run.arguments="--app-config.cache.strategy=local"
 ```
 
-Para utilizar o cache usando o Redis: 
+Para utilizar com cache no Redis: 
 
 ```
 mvn spring-boot:run -D spring-boot.run.arguments="--app-config.cache.strategy=redis"
@@ -55,5 +55,5 @@ Exemplo de Resposta:
 }
 ```
 
-## Agradecimentos
+### Agradecimentos
 Projeto didático desenvolvido baseado nos vídeos do canal do YouTube [Comics & Code](https://youtube.com/playlist?list=PLTnZgkfXPBX5uJSZxIVMPbNxNXfdRu15p).
